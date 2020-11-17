@@ -10,20 +10,18 @@ use Symfony\Component\Routing\Annotation\Route;
 class articleController
 {
     /**
-     *  Je crée une nouvelle page avec une nouvelle route pour récuperer des articles grâce à leur id.
-     * @Route("/article", name="article")
+     *  Je crée une nouvelle page avec une nouvelle route pour récuperer des articles grâce à leur id
+     * en utilisant une wildcard id entre acollades.
+     * @Route("/article/{id}", name="article")
      */
 
-    //J'utilise une méthode publique de Symfony avec en paramètres l'autowire de Symfony définit par
-    // la classe Request et la variable $request.
+    //J'utilise une méthode publique de Symfony avec en paramètres la wildcard id
+    // Cette wildcard id va récupérer automatiquement l'id de l'url entré par l'utilisateur.
 
-    public function recuperer_Article(Request $request)
+    public function recupererArticle($id)
     {
 
 
-        // Je récupère mon "id" avec la propriété query et la fonction get:
-
-        $idArticle = $request->query->get("id");
 
         //A partir d'un tableau contenant des articles, je simule une requête de récupération des données
         //dans une BDD.
@@ -37,15 +35,15 @@ class articleController
             6 => "Article 6",
         ];
 
-        //Pour obtenir l'article de l'id récupérer dans l'url, on fait passer dans le tableau $articles,
-        //l'index $idArticle.
-
-        $articles[$idArticle];
+        //Pour obtenir l'article de l'id entré par l'utilisateur dans l'url, on fait passer dans le tableau $articles,
+        //l'index $id.
+        //$articles[$id];
 
         //Je crée une nouvelle réponse en l'instanciant grâce à la classe Response.
 
-        $response = new Response("<h1>" . $articles[$idArticle] . "</h1>");
+        $response = new Response("<h1>" . $articles[$id] . "</h1>");
 
+        //Je retourne ma reponse :
         return $response;
     }
 }
