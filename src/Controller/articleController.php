@@ -45,17 +45,11 @@ class articleController extends AbstractController
             6 => "Article 6",
         ];
 
-        //Pour obtenir l'article de l'id entré par l'utilisateur dans l'url, on fait passer dans le tableau $articles,
-        //l'index $id.
-        //$articles[$id];
+        //Je retourne ma réponse http en affichant sur le navigateur la page html article.html.twig
+        //J'utilise la méthode render de la class AbstractController :
 
-        //Je crée une nouvelle réponse en l'instanciant grâce à la classe Response.
 
-        $response = new Response("<h1>" . $articles[$id] . "</h1>");
-
-        //Je retourne ma reponse http (grâce à la class Response) est parce qu'un Controller doit retourner une réponse.
-        //Sinon çà affichera une erreur
-        return $response;
+        return $this->render('article.html.twig');
     }
 
 
