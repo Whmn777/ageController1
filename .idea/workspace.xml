@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2e34013-8998-4c24-855f-54321156404b" name="Default Changelist" comment="" />
+    <list default="true" id="b2e34013-8998-4c24-855f-54321156404b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/articleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/exo2Symfony.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/exo2Symfony.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AgeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AgeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -112,9 +124,11 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kNCsdvuEEHmqPCtIlDUsCi3WEl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -133,17 +147,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605531869961</updated>
-      <workItem from="1605531871145" duration="2028000" />
+      <workItem from="1605531871145" duration="4932000" />
+      <workItem from="1605549671627" duration="491000" />
+      <workItem from="1605602390152" duration="3097000" />
     </task>
+    <task id="LOCAL-00001" summary="class Request et Response pour récuperer nom et prénom">
+      <created>1605550017161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605550017161</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="class Request et Response pour récuperer nom et prénom" />
+    <option name="LAST_COMMIT_MESSAGE" value="class Request et Response pour récuperer nom et prénom" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="183" key="NewPhpClassDialog" timestamp="1605532738175">
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605607500183">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="453" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1605532738175" />
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605607500183" />
+    <state x="327" y="25" key="CommitChangelistDialog2" timestamp="1605550016876">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="327" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1605550016876" />
+    <state x="453" y="183" key="NewPhpClassDialog" timestamp="1605607458621">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="453" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1605607458621" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1605550041209">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605550041209" />
   </component>
 </project>
