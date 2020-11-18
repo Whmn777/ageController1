@@ -59,7 +59,7 @@ class ExoController extends AbstractController
                 "poli",
             ];
 
-        //Je retourne ma réponse http en affichant sur le navigateur la page html profile.html.twig
+        //Je retourne ma réponse http en affichant sur le navigateur la page html skills.html.twig
         //J'utilise la méthode render de la class AbstractController :
         //Je fais afficher une variable en utilisant la méthode render avec en paramètre un tableau contenant
         //cette même variable : ici $skills qui est un array
