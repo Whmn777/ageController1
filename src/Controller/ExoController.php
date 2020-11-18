@@ -20,8 +20,8 @@ class ExoController extends AbstractController
 
         $profile =
             [
-                "firstname"=>"Flantier",
-                "name"=>"Noel",
+                "firstname" => "Flantier",
+                "name" => "Noel",
                 "age" => 40,
                 "job" => "secret agent",
                 "active" => true
@@ -36,7 +36,7 @@ class ExoController extends AbstractController
 
         return $this->render('profile.html.twig',
             [
-            'profile'=>$profile //'profile'=nom de la variable dans twig=>qui prend pour valeur la variable $profile
+                'profile' => $profile //'profile'=nom de la variable dans twig=>qui prend pour valeur la variable $profile
             ]);
 
         //Dans la méthode render, Symfony va compiler le fichier twig en html afin qu'il soit lisible par le navigateur
@@ -68,11 +68,74 @@ class ExoController extends AbstractController
 
         return $this->render('skills.html.twig',
             [
-                'skills'=>$skills //'skills'=nom de la variable dans twig=>qui prend pour valeur la variable $skills
+                'skills' => $skills //'skills'=nom de la variable dans twig=>qui prend pour valeur la variable $skills
             ]);
 
         //Dans la méthode render, Symfony va compiler le fichier twig en html afin qu'il soit lisible par le navigateur
         //les variables en php seront aussi affichées, avec la page html, avec leurs valeurs).
     }
 
+
+    /**
+     *  Je crée une page avec une nouvelle route pour récuperer les agents
+     * @Route("/agents", name="agents")
+     */
+
+    //Je crée une méthode publique avec Symfony, que je nomme getAgents, pour pouvoir récupérer de mon tableau
+    //les informations désirées, et les faire afficher ensuite sur le navigateur:
+
+    public function getAgents()
+    {
+        // $agents est un tableau multi dimensionnel:
+
+        $agents = [
+            1 => [
+                "lastName" => "Robert",
+                "firstName" => "David",
+                "age" => 30,
+                "published" => true
+            ],
+            2 => [
+                "lastName" => "Labaste",
+                "firstName" => "Denis",
+                "age" => 29,
+                "published" => true
+            ],
+            3 => [
+                "lastName" => "Rozand",
+                "firstName" => "Mathieu",
+                "age" => 31,
+                "published" => false
+            ],
+            4 => [
+                "lastName" => "Despert",
+                "firstName" => "Yoann",
+                "age" => 33,
+                "published" => true
+            ],
+            5 => [
+                "lastName" => "Dorignac",
+                "firstName" => "Loic",
+                "age" => 34,
+                "published" => false
+            ]
+        ];
+
+        //Je retourne ma réponse http en affichant sur le navigateur la page html agents.html.twig
+        //J'utilise la méthode render de la class AbstractController :
+        //Je fais afficher une variable en utilisant la méthode render avec en paramètre un tableau contenant
+        //cette même variable : ici $agents qui est un array multi dimensionnel (c'est à dire des tableaux imbriqués
+        //les uns dans les autres).
+
+        return $this->render('agents.html.twig',
+            [
+                'agents' => $agents //'agents'=nom de la variable dans twig=>qui prend pour valeur la variable $agents
+            ]);
+
+
+        //Dans la méthode render, Symfony va compiler le fichier twig en html afin qu'il soit lisible par le navigateur
+        //les variables en php seront aussi affichées, avec la page html, avec leurs valeurs).
+
+
+    }
 }

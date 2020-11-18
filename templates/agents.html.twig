@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <! Pour chaque agent(variable instanciée dans twig) de mon tableau agents (où est stocké tous les agents en php)>
+
+{% for agent in agents  %}
+
+    <! Si un agent à la valeur published étant égale à true>
+
+    {% if agent.published == true %}
+
+        <! j'affiche les informations des agents correspondants  :
+        <li>{{ agent.lastName }}</li>
+        <li>{{ agent.age }}</li>
+
+
+    {%  else %}
+        <! Sinon j'affiche la réponse à Atif qui m'a donné un coup de pouce pour cet exo>
+        ma bitte
+    {%  endif %}
+
+{% endfor %}
+</ul>
+<! une acollade c'est pour afficher une instruction de php dans le fichier twig>
+<! deux accolades c'est pour afficher une variable de php dans fichier twig>
+
+
+
+
+
+</body>
+</html>
