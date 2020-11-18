@@ -5,13 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+
+{% if profile.active %}
 <h1>{{ profile.name}} - {{ profile.firstname }}</h1>
 <h2>{{ profile.age}}</h2>
-{% if profile.active %}
-<p>le métier ce cette personne est {{ profile.job }}
-{% endif %} </p>
+<p>le métier de cette personne est {{ profile.job }}</p>
+    {% else %}
+    <h1> Je ne peux pas dévoiler le profil de cette personne </h1>
+{% endif %}
+
+<! une acollade c'est pour afficher une condition....une fonction dans le twig>
+<! deux accolades c'est pour afficher une variable dans twig>
 
 
-<p></p>
+
+
+
 </body>
 </html>
