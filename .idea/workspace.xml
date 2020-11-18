@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2e34013-8998-4c24-855f-54321156404b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/article.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/articleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/articleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +153,8 @@
       <updated>1605531869961</updated>
       <workItem from="1605531871145" duration="4932000" />
       <workItem from="1605549671627" duration="491000" />
-      <workItem from="1605602390152" duration="10579000" />
+      <workItem from="1605602390152" duration="11064000" />
+      <workItem from="1605690537593" duration="831000" />
     </task>
     <task id="LOCAL-00001" summary="class Request et Response pour récuperer nom et prénom">
       <created>1605550017161</created>
