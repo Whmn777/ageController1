@@ -13,17 +13,14 @@
 
     <! Si un agent à la valeur published étant égale à true>
 
-    {% if agent.published == true %}
+    {% if agent.published  %}
 
-        <! j'affiche les informations des agents correspondants  :
-        <h3>{{ agent.firstName }} {{ agent.lastName }} {{ agent.age }} ans </h3><br>
-
-
-
-    {%  else %}
-        <! Sinon j'affiche la réponse à Atif qui m'a donné un coup de pouce pour cet exo>
-        <h4>ma bitte</h4>
-    {%  endif %}
+        <! j'affiche les informations des agents correspondants, en lien cliquable, pour que l'on puisse
+        accéder à leur page personnelles:>
+        <h3>
+            <a href="{{ path('agent', {'id': agent.id}) }}">{{ agent.firstName }} {{ agent.lastName }} {{ agent.age }} ans></a>
+        </h3>
+{% endif %}
 
 {% endfor %}
 

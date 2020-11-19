@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2e34013-8998-4c24-855f-54321156404b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/agent.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ExoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ExoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/agents.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/agents.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +158,8 @@
       <workItem from="1605690537593" duration="15555000" />
       <workItem from="1605717397407" duration="481000" />
       <workItem from="1605718116709" duration="858000" />
-      <workItem from="1605725238130" duration="2538000" />
+      <workItem from="1605725238130" duration="3311000" />
+      <workItem from="1605775120490" duration="4129000" />
     </task>
     <task id="LOCAL-00001" summary="class Request et Response pour récuperer nom et prénom">
       <created>1605550017161</created>
@@ -188,10 +191,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="453" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1605696744216" />
-    <state x="229" y="89" key="SettingsEditor" timestamp="1605628385206">
+    <state x="229" y="89" key="SettingsEditor" timestamp="1605777794132">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605628385206" />
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605777794132" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1605550041209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

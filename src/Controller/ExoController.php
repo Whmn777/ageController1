@@ -90,30 +90,35 @@ class ExoController extends AbstractController
 
         $agents = [
             1 => [
+                "id" => 1,
                 "lastName" => "Robert",
                 "firstName" => "David",
                 "age" => 30,
                 "published" => true
             ],
             2 => [
+                "id" => 2,
                 "lastName" => "Labaste",
                 "firstName" => "Denis",
                 "age" => 29,
                 "published" => true
             ],
             3 => [
+                "id" => 3,
                 "lastName" => "Rozand",
                 "firstName" => "Mathieu",
                 "age" => 31,
                 "published" => false
             ],
             4 => [
+                "id" => 4,
                 "lastName" => "Despert",
                 "firstName" => "Yoann",
                 "age" => 33,
                 "published" => true
             ],
             5 => [
+                "id" => 5,
                 "lastName" => "Dorignac",
                 "firstName" => "Loic",
                 "age" => 34,
@@ -137,5 +142,75 @@ class ExoController extends AbstractController
         //les variables en php seront aussi affichées, avec la page html, avec leurs valeurs).
 
 
+    }
+
+
+    /**
+     *  Je crée une page avec une nouvelle route pour récuperer afficher chaque agent
+     * @Route("/agent/{id}", name="agent")
+     */
+
+//Je crée avec Symfony une méthode publique agentShow pour faire afficher sur mon navigateur chaque agent.
+//Pour cela je récupère chaque id de chaque agent, ce qui veut dire que je passe en paramètre de ma méthode
+// l'id coresspondant :
+
+
+    public function agentShow($id)
+    {
+        // $agents est un tableau multi dimensionnel:
+
+        $agents = [
+            1 => [
+                "id" => 1,
+                "lastName" => "Robert",
+                "firstName" => "David",
+                "age" => 30,
+                "published" => true
+            ],
+            2 => [
+                "id" => 2,
+                "lastName" => "Labaste",
+                "firstName" => "Denis",
+                "age" => 29,
+                "published" => true
+            ],
+            3 => [
+                "id" => 3,
+                "lastName" => "Rozand",
+                "firstName" => "Mathieu",
+                "age" => 31,
+                "published" => false
+            ],
+            4 => [
+                "id" => 4,
+                "lastName" => "Despert",
+                "firstName" => "Yoann",
+                "age" => 33,
+                "published" => true
+            ],
+            5 => [
+                "id" => 5,
+                "lastName" => "Dorignac",
+                "firstName" => "Loic",
+                "age" => 34,
+                "published" => false
+            ]
+        ];
+
+
+        // Je récupère l'id de mon agent dans ma variable $agent.
+
+        $agent = $agents[$id];
+
+        //je retourne ma méthode en utilisant la méthode render de la classe AbstractController, afin d'afficher la
+        //page de chaque Agent. Je passe donc en paramètre du render l'url de ma page agent.html.twig, et un tableau
+        //qui fournit chaque informations par agent : $agent
+
+
+
+        return $this->render('agent.html.twig',
+            [
+                'agent' => $agent // 'agent' étant ma variable dans twig qui a pour valeur $agent
+            ]);
     }
 }
